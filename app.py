@@ -34,7 +34,7 @@ data = {
 }
 
 if st.button("Predict"):
-    url = "https://<YOUR_CLOUD_RUN_URL>/predict"  # Replace with Cloud Run URL
+    url = "https://cardio-api-343502906390.us-central1.run.app/predict"  # Replace with Cloud Run URL
     response = requests.post(url, json=data)
     if response.status_code == 200:
         result = response.json()
